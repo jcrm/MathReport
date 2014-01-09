@@ -1,0 +1,27 @@
+\documentclass[12pt,a4paper,oneside,titlepage]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage[left=38.00mm, right=25.00mm, top=25.00mm, bottom=25.00mm]{geometry}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{titlepic}
+
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+\counterwithin{equation}{section}
+
+\usepackage[bookmarks = true, pdfborder = {0 0 0}, backref]{hyperref}
+\hypersetup{bookmarksopen = true, colorlinks = true, linkcolor = black, urlcolor = blue, citecolor = black}
+
+\begin{document}
+
+\input{Other/Title}
+\input{Other/Contents}
+\input{Other/Introduction}
+\input{Physics/Physics}
+\input{Other/References}
+\end{document}
