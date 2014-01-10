@@ -1,1 +1,39 @@
-\subsection{General Body of a Rigid Body:}
+\subsection{General Motion of a Rigid Body:}
+General motion of a rigid body is what the application for this product uses to move the object once an impulse force has been applied.
+As mentioned briefly in section 2.2, motion can be thought of as two parts.
+The moving of the centre of mass in an inertial frame in the case of the application this would be the world co-ordinates.
+The next part of general motion would be rotational motion of the object itself about an axis that passes through the centre of mass. 
+
+Below there are three equations (2.12 – 2.14) that represent how to calculate the position, velocity, and acceleration of any point of an object at any instant.
+To start the axes of the body are set so that it aligns with the principle axes at the centre of mass.
+Also $\tilde{\mathbf{p}_{0}}$ which is the position vector of the point relative  to the centre of mass has to be expressed by the inertial frame co-ordinates or in the application known as world co-ordinates.
+\begin{equation}
+\mathbf{p}=\mathbf{g}+t\mathbf{V}+{R}\tilde{\mathbf{p}_{0}}
+\end{equation}
+\begin{equation}
+\mathbf{v}=\mathbf{V}+\boldsymbol\omega\times{R}\tilde{\mathbf{p}_{0}}
+\end{equation}
+\begin{equation}
+\mathbf{a}=\mathbf{A}+\boldsymbol\omega\times(\boldsymbol\omega\times{R}\tilde{\mathbf{p}_{0}})
+\end{equation}
+Equation 2.12 is the equation for calculating a position of a point at any time. $g$ represents the centre of mass for the object, while $t$ is the time taken, and $\mathbf{V}$ is the velocity of the centre of mass. $\tilde{\mathbf{p}_{0}}$ is the initial value of $\tilde{\mathbf{p}}$ which as mentioned before is the position vector between the point and the centre of mass.
+Finally R is a standard rotation matrix by amount $\theta$ about an unit vector axis $\hat{\mathbf{v}} = \alpha\hat{\mathbf{i}} + \beta\hat{\mathbf{j}} + \gamma\hat{\mathbf{k}}$ passing through the origin.
+$\theta$ is determined by $\omega t$ with the $\omega$ being equal to $|\boldsymbol{\omega}|$.
+The $C$ in the matrix is a shorthand for $1-\cos\theta$.
+\begin{equation}\label{ma:Rotation}
+R = 
+\begin{bmatrix}
+  {\alpha}^{2}(C) + \cos\theta & 
+  \alpha\beta(C) - \gamma\sin\theta & 
+  \alpha\gamma(C) + \beta\sin\theta \\
+  
+  \alpha\beta(C) + \gamma\sin\theta & 
+  {\beta}^{2}(C) + \cos\theta & 
+  \beta\gamma(C) - \alpha\sin\theta \\
+  
+  \alpha\gamma(C) - \beta\sin\theta & 
+  \beta\gamma(C) + \alpha\sin\theta & 
+  {\gamma}^{2}(C) + \cos\theta \\
+\end{bmatrix}
+\end{equation}
+The only new symbol in equation 2.13 or the velocity equation is $\boldsymbol{\omega}$ which is the angular velocity vector. In the final equation (2.14) the $A$ is the acceleration of the centre of mass.

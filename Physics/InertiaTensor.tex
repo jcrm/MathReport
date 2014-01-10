@@ -1,21 +1,44 @@
 \subsection{Inertia Tensor:}
-$\begin{bmatrix}\label{ma:Inertia Tensor}
+The inertia tensor, which is sometimes called the mass matrix, is a 3x3 matrix which hold the characteristics of a rigid body.
+This including the moment of inertia for each of its axes stored along the diagonal of the matrix and the products of inertia \citep{millington2007game}.
+\citet{millington2007game} describes the products of inertia as the “tendency of an object to rotate in a direction in which torque is being applied.”
+An example of the phenomena is given as a child’s top that starts spinning in one direction but will then suddenly jump upside and spin in another direction \citep{millington2007game}. 
+Below equation 2.6 is the inertia tensor matrix with the previously mention diagonal moments of inertia and the remaining products of inertia.
+$A$, $B$, $C$ or equations 2.7 are the moments of inertia, while $F$, $G$, $H$ are the products of inertia or equations 2.8. 
+\begin{equation}\label{ma:Inertia Tensor}
+\begin{bmatrix}
   A & -H & -G \\
   -H & B & -F \\
   -G & -F & C
-\end{bmatrix}$
-
+\end{bmatrix}
+\end{equation}
 \begin{equation}\label{eq:Moments of Inertia}
-A=\sum\rho\left({x}_{2}^{2}+{x}_{3}^{2}\right)
+A=\sum\rho\left({y}^{2}+{z}^{2}\right)
 \qquad
-B=\sum\rho\left({x}_{1}^{2}+{x}_{3}^{2}\right)
+B=\sum\rho\left({x}^{2}+{z}^{2}\right)
 \qquad
-C=\sum\rho\left({x}_{1}^{2}+{x}_{2}^{2}\right)
+C=\sum\rho\left({x}^{2}+{y}^{2}\right)
 \end{equation}
 \begin{equation}\label{eq:Product of Inertia}
-F=\sum\rho\left({x}_{2}{x}_{3}\right)
+F=\sum\rho\left(yz\right)
 \qquad
-G=\sum\rho\left({x}_{1}+{x}_{3}\right)
+G=\sum\rho\left(xz\right)
 \qquad
-H=\sum\rho\left({x}_{1}+{x}_{2}\right)
+H=\sum\rho\left(xy\right)
+\end{equation}
+Equation 2.9-2.11 show the triple integrals needed to calculate the inertia tensor for any object that has uniform density. 
+\begin{equation}\label{eq:AB Triple Integral}
+A=\iiint_{V} \rho({y}^{2}+{z}^{2})\  dx dy dz
+\qquad
+B=\iiint_{V} \rho({x}^{2}+{z}^{2})\ dx dy dz
+\end{equation}
+\begin{equation}\label{eq:CF Triple Integral}
+C=\iiint_{V} \rho({x}^{2}+{y}^{2})\ dx dy dz
+\qquad
+F=\iiint_{V} \rho(yz)\ dx dy dz
+\end{equation}
+\begin{equation}\label{eq:GH Triple Integral}
+G=\iiint_{V} \rho(xz)\ dx dy dz
+\qquad
+H=\iiint_{V} \rho(xy)\ dx dy dz
 \end{equation}

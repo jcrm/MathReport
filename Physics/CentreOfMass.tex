@@ -6,8 +6,9 @@ The object must be split into particles so that the average position can be calc
    G=\frac{1}{M}\sum _{n}{p}_{i}{m}_{i} 
 \end{equation}
 Where $G$ is the position of the centre of mass, $M$ is the mass of the entire object, ${p}_{i}$ is the position of the particle and ${m}_{i}$ is the mass of each particle.
-For certain shapes such as cuboids and spheres with uniform density the centre of mass is the centre of the shape \citep{millington2007game}.
-
+The centre of mass for any 3D object with uniform density can be found by performing a triple integral on the each separate coordinate component and then dividing by the mass of the entire object.
+The triple integrals for the xyz components can be seen in equations 2.2 – 2.4.
+Equation 2.5 shows the position vector of the centre of mass compiled from the results of equations 2.2 – 2.4.
 \begin{equation} \label{eq:Centre of Mass x-Component}
 	\centering
    G_{x}=\frac{1}{M}\int\!\int\!\int x\ dx dy dz
@@ -24,3 +25,5 @@ For certain shapes such as cuboids and spheres with uniform density the centre o
 	\centering
    \mathbf{G}=(G_{x},G_{y},G_{z})
 \end{equation}
+For certain shapes such as cuboids and spheres with uniform density the centre of mass is the centre of the shape \citep{millington2007game}.
+\citet{millington2007game} describes the reason why the centre of mass is so important to rigid body physics is because “By selecting the center of mass as our origin position we can completely separate the calculations for the linear motion of the object (which is the same as for particles) and its angular motion.” 
