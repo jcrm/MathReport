@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.16)  10 JAN 2014 14:18
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.16)  10 JAN 2014 14:41
 entering extended mode
 **Report.tex
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Report.tex"
@@ -648,12 +648,12 @@ l.12 \begin{equation}
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Physics/InertiaTensor.tex"
 [2])
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Physics/GeneralBodyOfARigid
-Body.tex" [3]))
+Body.tex" [3] [4]))
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Other/References.tex"
-[4] ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Report.bbl"
+[5] ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Report.bbl"
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Report.brf")
 \tf@brf=\write5
-) [5
+) [6
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
@@ -664,14 +664,20 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 27.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
 Package rerunfilecheck Info: File `Report.out' has not changed.
 (rerunfilecheck)             Checksum: 9CD2658838FCF2049A6DE8500B2BAD19;405.
-Package rerunfilecheck Info: File `Report.brf' has not changed.
-(rerunfilecheck)             Checksum: 3B8619C20FC6EDADE29437706D5D5676;626.
+
+
+Package rerunfilecheck Warning: File `Report.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `Report.brf':
+(rerunfilecheck)             Before: 3B8619C20FC6EDADE29437706D5D5676;626
+(rerunfilecheck)             After:  91BCCA5934FED07984C3B9579B4D0CE0;626.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 27.
  ) 
 Here is how much of TeX's memory you used:
- 7191 strings out of 493921
- 103532 string characters out of 3147284
- 191879 words of memory out of 3000000
+ 7194 strings out of 493921
+ 103564 string characters out of 3147284
+ 192879 words of memory out of 3000000
  10314 multiletter control sequences out of 15000+200000
  15212 words of font info for 57 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -685,9 +691,9 @@ e1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Report.pdf (7 pages, 185730 bytes).
+Output written on Report.pdf (8 pages, 188551 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
+ 174 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
  62 words of extra memory for PDF output out of 10000 (max. 10000000)
 

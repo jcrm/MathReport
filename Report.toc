@@ -4,4 +4,4 @@
 \contentsline {subsection}{\numberline {2.2}Centre Of Mass:}{1}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Inertia Tensor:}{2}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}General Motion of a Rigid Body:}{3}{subsection.2.4}
-\contentsline {section}{References}{5}{section*.2}
+\contentsline {section}{References}{6}{section*.2}
