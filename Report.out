@@ -1,5 +1,5 @@
-\BOOKMARK [1][]{section.1}{Introduction:}{}% 1
-\BOOKMARK [1][]{section.2}{Physics:}{}% 2
+\BOOKMARK [1][]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][]{section.2}{Physics}{}% 2
 \BOOKMARK [2][]{subsection.2.1}{Rigid Body:}{section.2}% 3
 \BOOKMARK [2][]{subsection.2.2}{Centre Of Mass:}{section.2}% 4
 \BOOKMARK [2][]{subsection.2.3}{Inertia Tensor:}{section.2}% 5
@@ -8,4 +8,6 @@
 \BOOKMARK [2][]{subsection.3.1}{Application:}{section.3}% 8
 \BOOKMARK [2][]{subsection.3.2}{Code:}{section.3}% 9
 \BOOKMARK [1][]{section.4}{Review}{}% 10
-\BOOKMARK [1][]{section*.2}{References}{}% 11
+\BOOKMARK [2][]{subsection.4.1}{Comparison:}{section.4}% 11
+\BOOKMARK [2][]{subsection.4.2}{Conclusion:}{section.4}% 12
+\BOOKMARK [1][]{section*.2}{References}{}% 13

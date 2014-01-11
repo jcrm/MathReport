@@ -1,0 +1,128 @@
+\subsection{Comparison:}
+To see how well the application is at simulating general motion of rigid bodies, this section will look to compare the position the application has after a moment of time has occurred to the position calculated by hand at the same moment.
+Figure \ref{fig:ScreenShotSingle} shows the cube after 0.526 seconds.
+This time will be used when calculating position by hand using Equation \ref{eq:PositionGM} because in this scenario force is available meaning the acceleration can be worked out using Newton's Second Law $F=MA$.
+\begin{equation}\label{eq:PositionGM}
+\mathbf{p}=\frac{1}{2}\mathbf{A}t^{2}+{R}\tilde{\mathbf{p}_{0}}
+\end{equation}
+For the hand calculation the angular velocity will be represented by $\boldsymbol{\omega}$ and will be taken from the application.
+The force direction vector will also be taken form the application and will be represented by $F$.
+Also shown in \ref{var:Rotation Variables} is $\tilde{\mathbf{p}_{0}}$ and this represents the initial position vector.
+Equations \ref{var:ftm} show three of the variables used $M$ beings the mass of the object, $f$ is the force applied to the object, and $t$ is the time since the initial force is applied. 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{images/Screenshot2.PNG}
+	\caption{Screenshot of Cube at $t = 0.526 s$}
+	\label{fig:ScreenShotSingle}
+\end{figure}
+\begin{equation}\label{var:Rotation Variables}
+	\boldsymbol{\omega} = 
+	\begin{bmatrix}
+		 2.44 \\
+		-2.97 \\
+		-1.36 
+	\end{bmatrix}
+	\qquad
+	\mathbf{F} = f
+	\begin{bmatrix}
+		 0.6  \\
+		 0.13 \\
+		 0.79 
+	\end{bmatrix}
+	\qquad
+	\tilde{\mathbf{p}_{0}} = 
+	\begin{bmatrix}
+		-2.5 \\
+		 0 	 \\
+		-2.5 
+	\end{bmatrix}
+\end{equation}
+\begin{equation}\label{var:ftm}
+	f = 5N
+	\qquad
+	t = 0.526s
+	\qquad
+	M = 1kg
+\end{equation}
+\begin{equation}\label{var:thetaomega}
+	\omega = |\boldsymbol\omega| = 4.077
+	\qquad
+	\theta = \omega t = 2.144
+\end{equation}
+To start first acceleration will have to be calculated this will be represented by $\mathbf{A}$.
+It will be calculated as mentioned before using Newton’s Second Law $F=MA$.
+This means $\mathbf{A} = \mathbf{F}/M$ and results in Equation \ref{eq:Acceleration}.
+\begin{equation}\label{eq:Acceleration}
+	\mathbf{A} = \frac{f}{M}
+	\begin{bmatrix}
+		 0.6  \\
+		 0.13 \\
+		 0.79 
+	\end{bmatrix} = 5
+	\begin{bmatrix}
+		 0.6  \\
+		 0.13 \\
+		 0.79 
+	\end{bmatrix} = 
+	\begin{bmatrix}
+		 3  \\
+		 0.65 \\
+		 3.95 
+	\end{bmatrix}
+\end{equation}
+The next step is to calculate the matrix $R$, which is a standard rotational matrix about any axis.
+Equation \ref{ma:GeneralRotation} is the initial matrix that will be used. $C$ is shorthand for $(1-\cos\theta)$.
+Below the rotational matrix are the values for $\alpha, \beta, \gamma$ in Equation \ref{var:alphabetagamma} and in Equation \ref{var:cs1-c} are the values of $\cos\theta, \sin\theta, (1-\cos\theta)$.
+\begin{equation}\label{ma:GeneralRotation}
+	R = 
+	\begin{bmatrix}
+		{\alpha}^{2}(C) + \cos\theta & 
+		\alpha\beta(C) - \gamma\sin\theta & 
+		\alpha\gamma(C) + \beta\sin\theta \\
+		
+		\alpha\beta(C) + \gamma\sin\theta & 
+		{\beta}^{2}(C) + \cos\theta & 
+		\beta\gamma(C) - \alpha\sin\theta \\
+		
+		\alpha\gamma(C) - \beta\sin\theta & 
+		\beta\gamma(C) + \alpha\sin\theta & 
+		{\gamma}^{2}(C) + \cos\theta \\
+	\end{bmatrix}
+\end{equation}
+\begin{equation}\label{var:alphabetagamma}
+	\alpha = \frac{\boldsymbol\omega_{x}}{\omega} = 0.5984
+	\qquad
+	\beta = \frac{\boldsymbol\omega_{y}}{\omega} = -0.7284
+	\qquad
+	\gamma = \frac{\boldsymbol\omega_{z}}{\omega} = -0.3336
+\end{equation}
+\begin{equation}\label{var:cs1-c}
+	\cos\theta = -0.5421
+	\qquad
+	\sin\theta = 0.8403
+	\qquad
+	1-\cos\theta = 1.5421
+\end{equation}
+After substituting $\alpha, \beta, \gamma,\cos\theta, \sin\theta, $and $(1-\cos\theta)$ into the matrix the result can be seen in Matrix \ref{ma:Calculated Rotation}. 
+\begin{equation}\label{ma:Calculated Rotation}
+	R = 
+		\begin{bmatrix}
+		   0.0102 & 
+		   0 & 
+		   0.0721 \\
+		  
+		  -0.0016 & 
+		   0.9999 & 
+		  -0.0142 \\
+		  
+		  -0.0721 & 
+		   0.0141 & 
+		   0.9973 \\
+	\end{bmatrix}
+\end{equation}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{images/Screenshot1.PNG}
+	\caption{Screenshot of Cube at $t = 0.078 s$, $t = 0.296 s$, $t = 0.373 s$, $t = 0.498 s$}
+	\label{fig:ScreenShotFour}
+\end{figure}
