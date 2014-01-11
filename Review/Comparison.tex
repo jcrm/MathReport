@@ -103,21 +103,66 @@ Below the rotational matrix are the values for $\alpha, \beta, \gamma$ in Equati
 	\qquad
 	1-\cos\theta = 1.5421
 \end{equation}
-After substituting $\alpha, \beta, \gamma,\cos\theta, \sin\theta, $and $(1-\cos\theta)$ into the matrix the result can be seen in Matrix \ref{ma:Calculated Rotation}. 
+After substituting $\alpha, \beta, \gamma,\cos\theta, \sin\theta$, and $(1-\cos\theta)$ into the matrix the result can be seen in Matrix \ref{ma:Calculated Rotation}. Now multiply $R$ and $\tilde{\mathbf{p}_{0}}$ together to get Vector \ref{ma:CalculatedRPO}.
 \begin{equation}\label{ma:Calculated Rotation}
 	R = 
 		\begin{bmatrix}
 		   0.0102 & 
-		   0 & 
-		   0.0721 \\
+		  -0.392 & 
+		  -0.9199 \\
 		  
-		  -0.0016 & 
-		   0.9999 & 
-		  -0.0142 \\
+		  -0.9525 & 
+		   0.2761 & 
+		  -0.1282 \\
 		  
-		  -0.0721 & 
-		   0.0141 & 
-		   0.9973 \\
+		   0.3043 & 
+		   0.8776 & 
+		  -0.3705 \\
+	\end{bmatrix}
+\end{equation}
+\begin{equation}\label{ma:CalculatedRPO}
+	R\tilde{\mathbf{p}_{0}} = 
+	\begin{bmatrix}
+		 -2.2744 \\
+		 -2.7018 \\
+		 -0.1656 
+	\end{bmatrix}
+\end{equation}
+$R\tilde{\mathbf{p}_{0}}$, $\mathbf{A}$, and $t^{2}$ can be substituted back into Equation \ref{eq:PositionGM} to find the final position of the chosen point.
+\begin{equation}\label{eq:workout}
+	\mathbf{p}=\frac{1}{2}
+	\begin{bmatrix}
+		 3  \\
+		 0.65 \\
+		 3.95 
+	\end{bmatrix}
+	0.526^{2}+
+	\begin{bmatrix}
+		 -2.2744 \\
+ 		 -2.7018 \\
+ 		 -0.1656 
+	\end{bmatrix}
+\end{equation}
+\begin{equation}\label{eq:working2}
+	\mathbf{p}=
+	\begin{bmatrix}
+		 0.4145  \\
+		 0.0898  \\
+		 0.5158 
+	\end{bmatrix}
+	+
+	\begin{bmatrix}
+		-2.2744 \\
+ 		-2.7018 \\
+ 		-0.1656 
+	\end{bmatrix}
+\end{equation}
+\begin{equation}\label{eq:final}
+	\mathbf{p}=
+	\begin{bmatrix}
+		-1.86  \\
+		-2.61  \\
+		 0.38 
 	\end{bmatrix}
 \end{equation}
 \begin{figure}[h!]

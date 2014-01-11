@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.16)  11 JAN 2014 17:04
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.16)  11 JAN 2014 17:27
 entering extended mode
 **Report.tex
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Report.tex"
@@ -715,25 +715,28 @@ s been already used, duplicate ignored
 l.15 ...ption{Screenshot of Cube at $t = 0.526 s$}
                                                    [8 <C:/Users/Jake/Documents/
 UNI/4th Year/Maths/Report/images/Screenshot2.PNG>] [9]
-<images/Screenshot1.PNG, id=207, 331.7193pt x 186.4566pt>
+<images/Screenshot1.PNG, id=209, 331.7193pt x 186.4566pt>
 File: images/Screenshot1.PNG Graphic file (type png)
 
 <use images/Screenshot1.PNG>
-Package pdftex.def Info: images/Screenshot1.PNG used on input line 125.
+Package pdftex.def Info: images/Screenshot1.PNG used on input line 170.
 (pdftex.def)             Requested size: 418.25552pt x 235.11864pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.126 ...= 0.296 s$, $t = 0.373 s$, $t = 0.498 s$}
+l.171 ...= 0.296 s$, $t = 0.373 s$, $t = 0.498 s$}
                                                   )
-("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Review/Conclusion.tex"))
-("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Other/References.tex"
-[10 <C:/Users/Jake/Documents/UNI/4th Year/Maths/Report/images/Screenshot1.PNG>]
-("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Report.bbl"
+("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Review/Conclusion.tex"
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)) ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Other/References.tex"
+[10] [11 <C:/Users/Jake/Documents/UNI/4th Year/Maths/Report/images/Screenshot1.
+PNG>] ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Report.bbl"
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Report.brf")
 \tf@brf=\write5
-) [11
+) [12
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 12.
@@ -749,10 +752,10 @@ Package rerunfilecheck Info: File `Report.brf' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 12.
  ) 
 Here is how much of TeX's memory you used:
- 9092 strings out of 493921
- 129349 string characters out of 3147284
- 253200 words of memory out of 3000000
- 12122 multiletter control sequences out of 15000+200000
+ 9101 strings out of 493921
+ 129461 string characters out of 3147284
+ 253368 words of memory out of 3000000
+ 12126 multiletter control sequences out of 15000+200000
  15549 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  34i,7n,40p,459b,1312s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -767,9 +770,9 @@ e1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Report.pdf (13 pages, 2432437 bytes).
+Output written on Report.pdf (14 pages, 2434643 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 76 named destinations out of 1000 (max. 500000)
+ 296 PDF objects out of 1000 (max. 8388607)
+ 81 named destinations out of 1000 (max. 500000)
  125 words of extra memory for PDF output out of 10000 (max. 10000000)
 
