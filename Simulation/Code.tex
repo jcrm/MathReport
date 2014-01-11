@@ -1,0 +1,34 @@
+\subsection{Code:}
+In figure \ref*{sc:SourceCode} there is a snippet of the code used to create the application.
+The code shows the process described earlier in which the user presses the left mouse button to start the movement of the object.
+Parts of the code have been removed because it is not relevant to the motion of the object.
+These lines of code follow and comments which start with /* and ends with */. 
+
+\begin{figure}[H]
+	\centering
+	\begin{lstlisting}
+	if (Input.GetMouseButton (0) && isPressed == false){
+	 //Cast a Ray forwards and check to see if it hits the object.
+	 Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+	 RaycastHit hit;
+	  //If the ray hits and object initalise the variables.
+	  if (Physics.Raycast (ray, out hit, distance)){
+		/*Start the timer and disable pressing the mouse button again.*/
+		//Calculate the force * direction of force.
+		Vector3 forceVector = (force* ray.direction);
+		//Add force to force at a particular location on object. Use Impulse so its an instantaneous force.
+		rigidbody.AddForceAtPosition(forceVector, hit.point, ForceMode.Impulse);
+		/*Collect direction of force and the position the force hits.*/
+		/*Output a screenshot.*/
+	  }
+	}
+	\end{lstlisting}
+	\caption{Code Snippet}
+	\label{sc:SourceCode}
+\end{figure}
+
+The relevant part of the code starts where the force vector is calculated.
+The force vector is calculated by times the force variable by the vector containing the direction of the ray that has been cast from the camera to the object.
+This vector is always normalized so this calculation doesn't need to be performed.
+This force vector is then applied to the rigid body at the position the user is looking at using a function provided by Unity3D.
+This function also takes a third variable which tells the function that the type of force added is an impulse force and should happen instantaneously.

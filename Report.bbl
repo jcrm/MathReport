@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{Available from: }
@@ -22,5 +22,10 @@ MacTaggart, D. 2013.
 Millington, I. 2007.
 \newblock \emph{Game physics engine development}.
 \newblock Taylor \& Francis US.
+
+\bibitem[{{Unity Technologies}(2013)}]{unity2013}
+{Unity Technologies}. 2013.
+\newblock \textit{Unity3D} [software] Version no 4.3.
+  \urlprefix\url{http://unity3d.com/}.
 
 \end{thebibliography}
