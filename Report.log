@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.16)  11 JAN 2014 17:27
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.16)  11 JAN 2014 22:31
 entering extended mode
 **Report.tex
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Report.tex"
@@ -747,18 +747,24 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 12.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 12.
 Package rerunfilecheck Info: File `Report.out' has not changed.
 (rerunfilecheck)             Checksum: 9171DBAAA104FD64CF3D7DA090B2D262;728.
-Package rerunfilecheck Info: File `Report.brf' has not changed.
-(rerunfilecheck)             Checksum: A8D160818C4276AC26100EEFE9209CAE;675.
+
+
+Package rerunfilecheck Warning: File `Report.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `Report.brf':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  A8D160818C4276AC26100EEFE9209CAE;675.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 12.
  ) 
 Here is how much of TeX's memory you used:
- 9101 strings out of 493921
- 129461 string characters out of 3147284
- 253368 words of memory out of 3000000
- 12126 multiletter control sequences out of 15000+200000
+ 9105 strings out of 493921
+ 129508 string characters out of 3147284
+ 253439 words of memory out of 3000000
+ 12129 multiletter control sequences out of 15000+200000
  15549 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 34i,7n,40p,459b,1312s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,10n,40p,459b,1312s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
@@ -770,9 +776,9 @@ e1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Report.pdf (14 pages, 2434643 bytes).
+Output written on Report.pdf (14 pages, 2434170 bytes).
 PDF statistics:
- 296 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 500000)
+ 291 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
  125 words of extra memory for PDF output out of 10000 (max. 10000000)
 
