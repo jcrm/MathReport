@@ -1,22 +1,23 @@
-\subsection{General Motion of a Rigid Body:}
-General motion of a rigid body is what the application for this product uses to move the object once an impulse force has been applied.
-As mentioned briefly in section 2.2, motion can be thought of as two parts.
-The moving of the centre of mass in an inertial frame in the case of the application this would be the world co-ordinates.
-The next part of general motion would be rotational motion of the object itself about an axis that passes through the centre of mass. 
+\subsection{General Motion of a Rigid Body:}\label{sc:GMORB}
+General motion of a rigid body is what the application for this project aims to show.
+It uses general motion of a rigid body to move the object once an impulse force has been applied.
+As mentioned briefly in section \ref{sc:COM}, motion can be thought of as two parts.
+The linear motion of the centre of mass in an inertial frame which in the case of the application would be movement in the world co-ordinates.
+The next part of general motion would be rotational motion of the object about an axis that passes through the centre of mass. 
 
-Below there are three equations (2.12 – 2.14) that represent how to calculate the position, velocity, and acceleration of any point of an object at any instant.
+Below there are three equations (\ref{eq:GMRB - Pos} - \ref{eq:GMRB - Acel}) that represent how to calculate the position, velocity, and acceleration of any point of an object at any instant.
 To start the axes of the body are set so that it aligns with the principle axes at the centre of mass.
 Also $\tilde{\mathbf{p}_{0}}$ which is the position vector of the point relative  to the centre of mass has to be expressed by the inertial frame co-ordinates or in the application known as world co-ordinates.
-\begin{equation}
+\begin{equation}\label{eq:GMRB - Pos}
 \mathbf{p}=\mathbf{g}+t\mathbf{V}+{R}\tilde{\mathbf{p}_{0}}
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq:GMRB - Velo}
 \mathbf{v}=\mathbf{V}+\boldsymbol\omega\times{R}\tilde{\mathbf{p}_{0}}
 \end{equation}
-\begin{equation}
+\begin{equation}\label{eq:GMRB - Acel}
 \mathbf{a}=\mathbf{A}+\boldsymbol\omega\times(\boldsymbol\omega\times{R}\tilde{\mathbf{p}_{0}})
 \end{equation}
-Equation 2.12 is the equation for calculating a position of a point at any time. $g$ represents the centre of mass for the object, while $t$ is the time taken, and $\mathbf{V}$ is the velocity of the centre of mass. $\tilde{\mathbf{p}_{0}}$ is the initial value of $\tilde{\mathbf{p}}$ which as mentioned before is the position vector between the point and the centre of mass.
+Equation \ref{eq:GMRB - Pos} is the equation for calculating a position of a point at any time. $g$ represents the centre of mass for the object, while $t$ is the time taken, and $\mathbf{V}$ is the velocity of the centre of mass. $\tilde{\mathbf{p}_{0}}$ is the initial value of $\tilde{\mathbf{p}}$ which as mentioned before is the position vector between the point and the centre of mass.
 Finally R is a standard rotation matrix by amount $\theta$ about an unit vector axis $\hat{\mathbf{v}} = \alpha\hat{\mathbf{i}} + \beta\hat{\mathbf{j}} + \gamma\hat{\mathbf{k}}$ passing through the origin.
 $\theta$ is determined by $\omega t$ with the $\omega$ being equal to $|\boldsymbol{\omega}|$.
 The $C$ in the matrix is a shorthand for $1-\cos\theta$.
@@ -36,14 +37,15 @@ R =
   {\gamma}^{2}(C) + \cos\theta \\
 \end{bmatrix}
 \end{equation}
-The only new symbol in equation 2.13 or the velocity equation is $\boldsymbol{\omega}$ which is the angular velocity vector. In the final equation (2.14) the $A$ is the acceleration of the centre of mass.
+The only new symbol in equation \ref{eq:GMRB - Velo} or the velocity equation compared with equation \ref{eq:GMRB - Pos} is $\boldsymbol{\omega}$ which is the angular velocity vector. In the final equation (\ref{eq:GMRB - Acel}) the $A$ is the acceleration of the centre of mass.
 
-Like simple 2D acceleration, velocity, and position there is a relationship between acceleration, velocity, and position of rigid bodies. This relationship can see the equations being written slightly differently.
-Because acceleration is a derivative of velocity equation 2.14 can be integrated with respect to time to create the equation 2.16 which differers slightly from the previous velocity equation (2.13).
-\begin{equation}
+Like simple 2D acceleration, velocity, and position there is a relationship between acceleration, velocity, and position of rigid bodies.
+This relationship can result in the equations \ref{eq:GMRB - Pos} - \ref{eq:GMRB - Acel} being written slightly differently.
+Because acceleration is a derivative of velocity over time, the acceleration equation (\ref{eq:GMRB - Acel}) can be integrated with respect to time to create the equation \ref{eq:IGMRB - Velo} which differers only slightly from the previous velocity equation (\ref{eq:GMRB - Velo}).
+\begin{equation}\label{eq:IGMRB - Velo}
 \mathbf{v}=\mathbf{A}t+\boldsymbol\omega\times{R}\tilde{\mathbf{p}_{0}}
 \end{equation}
-Also because velocity is a derivative of position the previous equation (2.16) can be integrated again with respect to time to get equation 2.17, with $\mathbf{g}$ being the centre of mass.
-\begin{equation}
+Also because velocity is a derivative of position with respect to time, the previous velocity equation (\ref{eq:IGMRB - Velo}) can be integrated again with respect to time to get equation \ref{eq:IGMRB - Pos}, with $\mathbf{g}$ being the centre of mass.
+\begin{equation}\label{eq:IGMRB - Pos}
 \mathbf{p}=\frac{1}{2}\mathbf{A}t^{2}+{R}\tilde{\mathbf{p}_{0}}+\mathbf{g}
 \end{equation}

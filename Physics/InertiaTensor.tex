@@ -1,10 +1,11 @@
-\subsection{Inertia Tensor:}
+\subsection{Inertia Tensor:}\label{sc:IT}
 The inertia tensor, which is sometimes called the mass matrix, is a 3x3 matrix which hold the characteristics of a rigid body.
 This including the moment of inertia for each of its axes stored along the diagonal of the matrix and the products of inertia \citep{millington2007game}.
 \citet{millington2007game} describes the products of inertia as the “tendency of an object to rotate in a direction in which torque is being applied.”
-An example of the phenomena is given as a child’s top that starts spinning in one direction but will then suddenly jump upside and spin in another direction \citep{millington2007game}. 
-Below equation 2.6 is the inertia tensor matrix with the previously mention diagonal moments of inertia and the remaining products of inertia.
-$A$, $B$, $C$ or equations 2.7 are the moments of inertia, while $F$, $G$, $H$ are the products of inertia or equations 2.8. 
+An example of the phenomena is given as a child's top that starts spinning in one direction but will then suddenly jump upside and spin in another direction \citep{millington2007game}. 
+
+Equation \ref{ma:Inertia Tensor} is the inertia tensor matrix with the previously mention diagonal moments of inertia and the remaining values representing the products of inertia.
+$A$, $B$, $C$ or equation \ref{eq:Moments of Inertia} are the moments of inertia, while $F$, $G$, $H$ are the products of inertia or equation \ref{eq:Product of Inertia}. 
 \begin{equation}\label{ma:Inertia Tensor}
 \begin{bmatrix}
   A & -H & -G \\
@@ -26,7 +27,7 @@ G=\sum\rho\left(xz\right)
 \qquad
 H=\sum\rho\left(xy\right)
 \end{equation}
-Equation 2.9-2.11 show the triple integrals needed to calculate the inertia tensor for any object that has uniform density. 
+Equation \ref{eq:AB Triple Integral} - \ref{eq:GH Triple Integral} show the triple integrals needed to calculate the inertia tensor for any object that has uniform density. 
 \begin{equation}\label{eq:AB Triple Integral}
 A=\iiint_{V} \rho({y}^{2}+{z}^{2})\  dx dy dz
 \qquad

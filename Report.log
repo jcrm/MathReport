@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.16)  12 JAN 2014 12:58
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.16)  12 JAN 2014 16:07
 entering extended mode
 **Report.tex
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Report.tex"
@@ -562,20 +562,20 @@ Package hyperref Info: Option `bookmarksopen' set `true' on input line 37.
 Package hyperref Info: Option `colorlinks' set `true' on input line 37.
 )
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Report.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -627,8 +627,8 @@ LaTeX Font Info:    ... okay on input line 3.
 )
 \c@lstlisting=\count129
 \AtBeginShipoutBox=\box33
-Package backref Info: ** backref set up for natbib ** on input line 3.
-Package hyperref Info: Link coloring ON on input line 3.
+Package backref Info: ** backref set up for natbib ** on input line 2.
+Package hyperref Info: Link coloring ON on input line 2.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -637,9 +637,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count130
 )
-LaTeX Info: Redefining \ref on input line 3.
-LaTeX Info: Redefining \pageref on input line 3.
-LaTeX Info: Redefining \nameref on input line 3.
+LaTeX Info: Redefining \ref on input line 2.
+LaTeX Info: Redefining \pageref on input line 2.
+LaTeX Info: Redefining \nameref on input line 2.
 
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Report.out")
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Report.out")
@@ -678,8 +678,9 @@ fTeX warning (ext4): destination with the same identifier (name{page.1}) has be
 en already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.12 \begin{equation}
-                      \label{eq:Centre of Mass x-Component} [1
+l.11 T
+      he centre of mass for any 3D object with uniform density can be found ...
+[1
 
 ])
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Physics/InertiaTensor.tex"
@@ -688,11 +689,11 @@ l.12 \begin{equation}
 Body.tex" [3] [4]))
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Simulation/Simulation.tex"
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Simulation/Application.tex"
-<images/Simulation.PNG, id=144, 329.0694pt x 277.5168pt>
+<images/Simulation.PNG, id=170, 329.0694pt x 277.5168pt>
 File: images/Simulation.PNG Graphic file (type png)
 
 <use images/Simulation.PNG>
-Package pdftex.def Info: images/Simulation.PNG used on input line 11.
+Package pdftex.def Info: images/Simulation.PNG used on input line 13.
 (pdftex.def)             Requested size: 418.25552pt x 352.73459pt.
 
 
@@ -702,7 +703,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [5] [6 <C:/Users/Jake/Documents/UNI/4th Year/Maths/Report/images/Simulation.PNG
 >])) ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Review/Review.tex"
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Review/Comparison.tex"
-[7] <images/Screenshot2.PNG, id=185, 331.7193pt x 186.4566pt>
+[7] <images/Screenshot2.PNG, id=210, 331.7193pt x 186.4566pt>
 File: images/Screenshot2.PNG Graphic file (type png)
 
 <use images/Screenshot2.PNG>
@@ -715,7 +716,7 @@ s been already used, duplicate ignored
 l.15 ...ption{Screenshot of Cube at $t = 0.526 s$}
                                                    [8 <C:/Users/Jake/Documents/
 UNI/4th Year/Maths/Report/images/Screenshot2.PNG>] [9]
-<images/Screenshot1.PNG, id=212, 331.7193pt x 186.4566pt>
+<images/Screenshot1.PNG, id=237, 331.7193pt x 186.4566pt>
 File: images/Screenshot1.PNG Graphic file (type png)
 
 <use images/Screenshot1.PNG>
@@ -727,41 +728,35 @@ s been already used, duplicate ignored
                    \relax 
 l.231 ...= 0.296 s$, $t = 0.373 s$, $t = 0.498 s$}
                                                    [10])
-("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Review/Conclusion.tex"))
-("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Other/References.tex"
+("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Review/Conclusion.tex"
 [11 <C:/Users/Jake/Documents/UNI/4th Year/Maths/Report/images/Screenshot1.PNG>]
+)) ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Other/References.tex"
 [12] ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Report.bbl"
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Report.brf")
 \tf@brf=\write5
 ) [13
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 12.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 12.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 10.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 10.
 
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Report.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 12.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 12.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 10.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 10.
 Package rerunfilecheck Info: File `Report.out' has not changed.
 (rerunfilecheck)             Checksum: 9171DBAAA104FD64CF3D7DA090B2D262;728.
-
-
-Package rerunfilecheck Warning: File `Report.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `Report.brf':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  A8D160818C4276AC26100EEFE9209CAE;675.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 12.
+Package rerunfilecheck Info: File `Report.brf' has not changed.
+(rerunfilecheck)             Checksum: A8D160818C4276AC26100EEFE9209CAE;675.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 10.
  ) 
 Here is how much of TeX's memory you used:
- 9108 strings out of 493921
- 129533 string characters out of 3147284
- 253481 words of memory out of 3000000
- 12130 multiletter control sequences out of 15000+200000
+ 9122 strings out of 493921
+ 129694 string characters out of 3147284
+ 254172 words of memory out of 3000000
+ 12144 multiletter control sequences out of 15000+200000
  15549 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 34i,10n,40p,459b,1312s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,9n,40p,488b,1302s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
@@ -771,11 +766,11 @@ e1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Report.pdf (15 pages, 2437166 bytes).
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on Report.pdf (15 pages, 2438631 bytes).
 PDF statistics:
- 299 PDF objects out of 1000 (max. 8388607)
+ 331 PDF objects out of 1000 (max. 8388607)
  84 named destinations out of 1000 (max. 500000)
  125 words of extra memory for PDF output out of 10000 (max. 10000000)
 

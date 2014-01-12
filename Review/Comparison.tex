@@ -1,4 +1,4 @@
-\subsection{Comparison:}
+\subsection{Comparison:}\label{sc:Comp}
 To see how well the application is at simulating general motion of rigid bodies, this section will look to compare the position the application has after a moment of time has occurred to the position calculated by hand at the same moment.
 Figure \ref{fig:ScreenShotSingle} shows the cube after 0.526 seconds.
 This time will be used when calculating position by hand using Equation \ref{eq:PositionGM} because in this scenario force is available meaning the acceleration can be worked out using Newton's Second Law $F=MA$.
@@ -224,7 +224,7 @@ $R\tilde{\mathbf{p}_{0}}$, $\mathbf{A}$, and $t^{2}$ can be substituted back int
 \end{equation}
 The final result for $\mathbf{p}$ is $(-0.88,-0.8,-1.81)$ when compared to the application vector of $(0.16,-0.76,-0.06)$ an error vector of $(1.04,0.04,1.75)$ can be calculated.
 This vector is calculated by subtracting the calculated position vector from the applications position vector to show the difference between the two.
-Using screenshots taking during the application, which can be seen in Figure \ref{fig:ScreenShotFour}, more calculations can be done using all the same variables except for the time variable to see if the application is constantly different from the calculated result.
+Using screenshots taking during the application, which can be seen in figure \ref{fig:ScreenShotFour}, more calculations can be done using all the same variables except for the time variable to see if the application is constantly different from the calculated result.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{images/Screenshot1.PNG}
@@ -233,9 +233,8 @@ Using screenshots taking during the application, which can be seen in Figure \re
 \end{figure}
 The Table \ref{table:ErrorTable} shows the results from performing the previous calculations on different time steps both by hand and by the application.
 Looking at the error vectors it can be seen that as the application continues the error between the application and the calculated results increase.
-There could be a number of different reasons which accumulated to give this error. One of these reasons could be because of the way the physics engine in Unity3D handles rigid bodies.
-Due to Unity3D being proprietary software it would be impossible to know exactly how the physics engine solves the problem or if any sacrifices where made to make performance fast and looking right compare to being actually physically realistic.
-\begin{table}[ht]
+
+\begin{table}[h]
 	\caption{Position Comparison}		% title of Table
 	\centering							% used for centering table
 	\begin{tabular}{c c c c}			% centered columns (4 columns)
@@ -253,3 +252,5 @@ Due to Unity3D being proprietary software it would be impossible to know exactly
 	\end{tabular}
 	\label{table:ErrorTable}					% is used to refer this table in the text
 \end{table}
+There could be a number of different reasons which accumulated to give this error. For example it could be because of the way the physics engine in Unity3D handles rigid bodies but due to Unity3D being proprietary software it would be impossible to know exactly how the physics engine solves the problem or if any sacrifices where made to make performance fast and looking right compare to being actually physically realistic.
+Also some of the errors could have come from rounding errors that follow through the equations, or from the possibility that the is timer not completely in sync with the physics engine in the application.
