@@ -3,11 +3,11 @@ To see how well the application is at simulating general motion of rigid bodies,
 Figure \ref{fig:ScreenShotSingle} shows the cube after 0.526 seconds.
 This time will be used when calculating position by hand using Equation \ref{eq:PositionGM} because in this scenario force is available meaning the acceleration can be worked out using Newton's Second Law $F=MA$.
 \begin{equation}\label{eq:PositionGM}
-\mathbf{p}=\frac{1}{2}\mathbf{A}t^{2}+{R}\tilde{\mathbf{p}_{0}}
+\mathbf{p}=\frac{1}{2}\mathbf{A}t^{2}+{R}\tilde{\mathbf{p}_{0}}+\mathbf{g}
 \end{equation}
 For the hand calculation the angular velocity will be represented by $\boldsymbol{\omega}$ and will be taken from the application.
 The force direction vector will also be taken form the application and will be represented by $F$.
-Also shown in \ref{var:Rotation Variables} is $\tilde{\mathbf{p}_{0}}$ and this represents the initial position vector.
+Also shown in \ref{var:Rotation Variables} is $\mathbf{P}$ and this represents the initial position, and $\mathbf{g}$ which is the centre of mass.
 Equations \ref{var:ftm} show three of the variables used $M$ beings the mass of the object, $f$ is the force applied to the object, and $t$ is the time since the initial force is applied. 
 \begin{figure}[h!]
 	\centering
@@ -30,11 +30,18 @@ Equations \ref{var:ftm} show three of the variables used $M$ beings the mass of 
 		 0.79 
 	\end{bmatrix}
 	\qquad
-	\tilde{\mathbf{p}_{0}} = 
+	\mathbf{P}= 
 	\begin{bmatrix}
-		-2.5 \\
-		 0 	 \\
-		-2.5 
+		2.5 \\
+		0 	 \\
+		2.5 
+	\end{bmatrix}
+	\qquad
+	\mathbf{g} = 
+	\begin{bmatrix}
+		0 \\
+	 	2.5 	 \\
+		0 
 	\end{bmatrix}
 \end{equation}
 \begin{equation}\label{var:ftm}
@@ -68,6 +75,25 @@ This means $\mathbf{A} = \mathbf{F}/M$ and results in Equation \ref{eq:Accelerat
 		 3  \\
 		 0.65 \\
 		 3.95 
+	\end{bmatrix}
+\end{equation}
+Next needs to be calculated, this is done by calculating the position vector of the point relative to the centre of mass,  $\mathbf{g}$, this can be shown in Equation \ref{Eq:po}.
+\begin{equation}\label{Eq:po}
+	\tilde{\mathbf{p}_{0}} = \mathbf{P} - \mathbf{g} = 
+	\begin{bmatrix}
+		2.5 \\
+		0 	 \\
+		2.5 
+	\end{bmatrix} -
+	\begin{bmatrix}
+		0 \\
+	 	2.5 	 \\
+		0 
+	\end{bmatrix} =
+	\begin{bmatrix}
+		 2.5 \\
+		-2.5 	 \\
+		 2.5 
 	\end{bmatrix}
 \end{equation}
 The next step is to calculate the matrix $R$, which is a standard rotational matrix about any axis.
@@ -108,7 +134,7 @@ After substituting $\alpha, \beta, \gamma,\cos\theta, \sin\theta$, and $(1-\cos\
 	R = 
 		\begin{bmatrix}
 		   0.0102 & 
-		  -0.392 & 
+		  -0.3919 & 
 		  -0.9199 \\
 		  
 		  -0.9525 & 
@@ -121,11 +147,30 @@ After substituting $\alpha, \beta, \gamma,\cos\theta, \sin\theta$, and $(1-\cos\
 	\end{bmatrix}
 \end{equation}
 \begin{equation}\label{ma:CalculatedRPO}
-	R\tilde{\mathbf{p}_{0}} = 
+	R\tilde{\mathbf{p}_{0}} =
 	\begin{bmatrix}
-		 -2.2744 \\
-		 -2.7018 \\
-		 -0.1656 
+		  0.0102 & 
+		  -0.3919 & 
+		  -0.9199 \\
+		  
+		  -0.9525 & 
+		  0.2761 & 
+		  -0.1282 \\
+		  
+		  0.3043 & 
+		  0.8776 & 
+		  -0.3705 \\
+	\end{bmatrix}
+	\begin{bmatrix}
+		 2.5 \\
+		-2.5 	 \\
+		 2.5 
+	\end{bmatrix}
+	= 
+	\begin{bmatrix}
+		 -1.2945 \\
+		 -3.3921 \\
+		 -2.3596 
 	\end{bmatrix}
 \end{equation}
 $R\tilde{\mathbf{p}_{0}}$, $\mathbf{A}$, and $t^{2}$ can be substituted back into Equation \ref{eq:PositionGM} to find the final position of the chosen point.
@@ -138,9 +183,15 @@ $R\tilde{\mathbf{p}_{0}}$, $\mathbf{A}$, and $t^{2}$ can be substituted back int
 	\end{bmatrix}
 	0.526^{2}+
 	\begin{bmatrix}
-		 -2.2744 \\
- 		 -2.7018 \\
- 		 -0.1656 
+		 -1.2945 \\
+		 -3.3921 \\
+		 -2.3596 
+	\end{bmatrix}
+	+
+	\begin{bmatrix}
+	0 \\
+	2.5 \\
+	0
 	\end{bmatrix}
 \end{equation}
 \begin{equation}\label{eq:working2}
@@ -152,39 +203,53 @@ $R\tilde{\mathbf{p}_{0}}$, $\mathbf{A}$, and $t^{2}$ can be substituted back int
 	\end{bmatrix}
 	+
 	\begin{bmatrix}
-		-2.2744 \\
- 		-2.7018 \\
- 		-0.1656 
+		-1.2945 \\
+		-3.3921 \\
+		-2.3596 
+	\end{bmatrix}
+	+
+	\begin{bmatrix}
+		 0 \\
+		 2.5 \\
+		 0 
 	\end{bmatrix}
 \end{equation}
 \begin{equation}\label{eq:final}
 	\mathbf{p}=
 	\begin{bmatrix}
-		-1.86  \\
-		-2.61  \\
-		 0.38 
+		-0.8801 \\
+ 		-0.8024 \\
+ 		-1.8138 
 	\end{bmatrix}
 \end{equation}
-\begin{figure}[h!]
+The final result for $\mathbf{p}$ is $(-0.88,-0.8,-1.81)$ when compared to the application vector of $(0.16,-0.76,-0.06)$ an error vector of $(1.04,0.04,1.75)$ can be calculated.
+This vector is calculated by subtracting the calculated position vector from the applications position vector to show the difference between the two.
+Using screenshots taking during the application, which can be seen in Figure \ref{fig:ScreenShotFour}, more calculations can be done using all the same variables except for the time variable to see if the application is constantly different from the calculated result.
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{images/Screenshot1.PNG}
 	\caption{Screenshot of Cube at $t = 0.078 s$, $t = 0.296 s$, $t = 0.373 s$, $t = 0.498 s$}
 	\label{fig:ScreenShotFour}
 \end{figure}
+The Table \ref{table:ErrorTable} shows the results from performing the previous calculations on different time steps both by hand and by the application.
+Looking at the error vectors it can be seen that as the application continues the error between the application and the calculated results increase.
+There could be a number of different reasons which accumulated to give this error. One of these reasons could be because of the way the physics engine in Unity3D handles rigid bodies.
+Due to Unity3D being proprietary software it would be impossible to know exactly how the physics engine solves the problem or if any sacrifices where made to make performance fast and looking right compare to being actually physically realistic.
 \begin{table}[ht]
 	\caption{Position Comparison}		% title of Table
 	\centering							% used for centering table
 	\begin{tabular}{c c c c}			% centered columns (4 columns)
 		\hline\hline 					%inserts double horizontal lines
-		t (seconds) & Calculated Position & Application Position & Error Vector\\[0.5ex]% inserts table
+		$t$ (seconds) & Calculated Position & Application Position & Error Vector\\[0.5ex]% inserts table
 		%heading
-		\hline									% inserts single horizontal line
-		0.078 & $(1.84,-0.75,2.94)$ & $(2.01,-0.5,2.72)$ & $(0.17,0.25,-0.22)$ \\
-		0.296 & $(-0.43,-2.46,2.62)$ & $(0.34,-1.54,1.96)$ & $(0.77,0.92,-0.66)$ \\
-		0.373 & $(-1.11,-2.74,2.01)$ & $(0.03,-1.47,1.26)$ & $(1.14,1.27,-0.75)$ \\
-		0.448 & $(-1.6,-2.8,1.25)$ & $(-0.02,-1.25,0.69)$ & $(1.58,1.55,-0.56)$ \\
-		0.526 & $(-1.86,-2.61,0.38)$ & $(0.16,-0.76,-0.06)$ & $(2.02,1.85,-0.44)$ \\ [1ex]	% [1ex] adds vertical space
+		\hline
+		\centering								% inserts single horizontal line
+		0.078 & $( 1.63,-0.69, 2.45)$ & $( 2.01,-0.50, 2.72)$ & $(0.38,0.19,0.27)$ \\
+		0.296 & $(-0.50,-1.70, 0.83)$ & $( 0.34,-1.54, 1.96)$ & $(0.84,0.16,1.13)$ \\
+		0.373 & $(-0.91,-1.62,-0.06)$ & $( 0.03,-1.47, 1.26)$ & $(0.94,0.16,1.32)$ \\
+		0.448 & $(-1.04,-1.32,-0.96)$ & $(-0.02,-1.25, 0.69)$ & $(1.02,0.07,1.65)$ \\
+		0.526 & $(-0.88,-0.80,-1.81)$ & $( 0.16,-0.76,-0.06)$ & $(1.04,0.04,1.75)$ \\ [1ex]	% [1ex] adds vertical space
 		\hline									%inserts single line
 	\end{tabular}
-	\label{(table:ErrorTable)}					% is used to refer this table in the text
+	\label{table:ErrorTable}					% is used to refer this table in the text
 \end{table}
