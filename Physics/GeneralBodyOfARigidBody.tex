@@ -5,9 +5,9 @@ As mentioned briefly in section \ref{sc:COM}, motion can be thought of as two pa
 The linear motion of the centre of mass in an inertial frame which in the case of the application would be movement in the world co-ordinates.
 The next part of general motion would be rotational motion of the object about an axis that passes through the centre of mass. 
 
-Below there are three equations (\ref{eq:GMRB - Pos} - \ref{eq:GMRB - Acel}) that represent how to calculate the position, velocity, and acceleration of any point of an object at any instant.
-To start the axes of the body are set so that it aligns with the principle axes at the centre of mass.
-Also $\tilde{\mathbf{p}_{0}}$ which is the position vector of the point relative  to the centre of mass has to be expressed by the inertial frame co-ordinates or in the application known as world co-ordinates.
+Below there are three equations (\ref{eq:GMRB - Pos} - \ref{eq:GMRB - Acel}) that represent how to calculate the position, velocity, and acceleration of any point of an object at any moment in time.
+To start the axes of the body must be set so that it aligns with the principle axes at the centre of mass, and $\omega$ must not change no matter what origin is used.
+Also $\tilde{\mathbf{p}}$ which is the position vector of the point relative  to the centre of mass has to be expressed by the inertial frame co-ordinates which in the application are known as world co-ordinates.
 \begin{equation}\label{eq:GMRB - Pos}
 \mathbf{p}=\mathbf{g}+t\mathbf{V}+{R}\tilde{\mathbf{p}_{0}}
 \end{equation}
@@ -49,3 +49,4 @@ Also because velocity is a derivative of position with respect to time, the prev
 \begin{equation}\label{eq:IGMRB - Pos}
 \mathbf{p}=\frac{1}{2}\mathbf{A}t^{2}+{R}\tilde{\mathbf{p}_{0}}+\mathbf{g}
 \end{equation}
+The equation \ref{eq:IGMRB - Pos} will be used when checking the accuracy of the application be calculating the position of a point on the object after a force is applied.

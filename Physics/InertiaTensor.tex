@@ -7,39 +7,51 @@ An example of the phenomena is given as a child's top that starts spinning in on
 Equation \ref{ma:Inertia Tensor} is the inertia tensor matrix with the previously mention diagonal moments of inertia and the remaining values representing the products of inertia.
 $A$, $B$, $C$ or equation \ref{eq:Moments of Inertia} are the moments of inertia, while $F$, $G$, $H$ are the products of inertia or equation \ref{eq:Product of Inertia}. 
 \begin{equation}\label{ma:Inertia Tensor}
-\begin{bmatrix}
-  A & -H & -G \\
-  -H & B & -F \\
-  -G & -F & C
-\end{bmatrix}
+	\begin{bmatrix}
+	  A & -H & -G \\
+	  -H & B & -F \\
+	  -G & -F & C
+	\end{bmatrix}
 \end{equation}
 \begin{equation}\label{eq:Moments of Inertia}
-A=\sum\rho\left({y}^{2}+{z}^{2}\right)
-\qquad
-B=\sum\rho\left({x}^{2}+{z}^{2}\right)
-\qquad
-C=\sum\rho\left({x}^{2}+{y}^{2}\right)
+	A=\sum\rho\left({y}^{2}+{z}^{2}\right)
+	\qquad
+	B=\sum\rho\left({x}^{2}+{z}^{2}\right)
+	\qquad
+	C=\sum\rho\left({x}^{2}+{y}^{2}\right)
 \end{equation}
 \begin{equation}\label{eq:Product of Inertia}
-F=\sum\rho\left(yz\right)
-\qquad
-G=\sum\rho\left(xz\right)
-\qquad
-H=\sum\rho\left(xy\right)
+	F=\sum\rho\left(yz\right)
+	\qquad
+	G=\sum\rho\left(xz\right)
+	\qquad
+	H=\sum\rho\left(xy\right)
 \end{equation}
 Equation \ref{eq:AB Triple Integral} - \ref{eq:GH Triple Integral} show the triple integrals needed to calculate the inertia tensor for any object that has uniform density. 
 \begin{equation}\label{eq:AB Triple Integral}
-A=\iiint_{V} \rho({y}^{2}+{z}^{2})\  dx dy dz
-\qquad
-B=\iiint_{V} \rho({x}^{2}+{z}^{2})\ dx dy dz
+	A=\iiint_{V} \rho({y}^{2}+{z}^{2})\  dx dy dz
+	\qquad
+	B=\iiint_{V} \rho({x}^{2}+{z}^{2})\ dx dy dz
 \end{equation}
 \begin{equation}\label{eq:CF Triple Integral}
-C=\iiint_{V} \rho({x}^{2}+{y}^{2})\ dx dy dz
-\qquad
-F=\iiint_{V} \rho(yz)\ dx dy dz
+	C=\iiint_{V} \rho({x}^{2}+{y}^{2})\ dx dy dz
+	\qquad
+	F=\iiint_{V} \rho(yz)\ dx dy dz
 \end{equation}
 \begin{equation}\label{eq:GH Triple Integral}
-G=\iiint_{V} \rho(xz)\ dx dy dz
-\qquad
-H=\iiint_{V} \rho(xy)\ dx dy dz
+	G=\iiint_{V} \rho(xz)\ dx dy dz
+	\qquad
+	H=\iiint_{V} \rho(xy)\ dx dy dz
 \end{equation}
+The inertia tensor and angular velocity are used in The Euler Equations to calculate the amount of torque needed to have an object rotate about a pivoted part of itself \citep{mactaggart2013l8}.
+The equations to achieve this are equations \ref{eq:Gamma1} - \ref{eq:Gamma3} with $A$, $B$ and $C$ representing the principal moments of inertia, $\omega_{1}$, $\omega_{2}$, $\omega_{3}$ being the $xyz$ components of the angular velocity $\boldsymbol\omega$, and $\Gamma_{1}$, $\Gamma_{2}$, $\Gamma_{3}$ are the components of the total moments of all the forces $\Gamma$.
+\begin{equation}\label{eq:Gamma1}
+	A\dot{\omega_{1}} - (B-C)\omega_{2}\omega_{3} = \Gamma_{1}
+\end{equation}
+\begin{equation}\label{eq:Gamma2}
+	B\dot{\omega_{2}} - (C-A)\omega_{3}\omega_{1} = \Gamma_{2}
+\end{equation}
+\begin{equation}\label{eq:Gamma3}
+	C\dot{\omega_{3}} - (A-B)\omega_{1}\omega_{2} = \Gamma_{3}
+\end{equation}
+These equations are not used in the application and would only be used if functionality were to be added which would allow the user to set a point on the object which is fixed so that it would pivot around it.

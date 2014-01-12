@@ -1,6 +1,12 @@
 \subsection{Comparison:}\label{sc:Comp}
 To see how well the application is at simulating general motion of rigid bodies, this section will look to compare the position the application has after a moment of time has occurred to the position calculated by hand at the same moment.
 Figure \ref{fig:ScreenShotSingle} shows the cube after 0.526 seconds.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{images/Screenshot2.PNG}
+	\caption{Screenshot of Cube at $t = 0.526 s$}
+	\label{fig:ScreenShotSingle}
+\end{figure}
 This time will be used when calculating position by hand using Equation \ref{eq:PositionGM} because in this scenario force is available meaning the acceleration can be worked out using Newton's Second Law $F=MA$.
 \begin{equation}\label{eq:PositionGM}
 \mathbf{p}=\frac{1}{2}\mathbf{A}t^{2}+{R}\tilde{\mathbf{p}_{0}}+\mathbf{g}
@@ -9,12 +15,6 @@ For the hand calculation the angular velocity will be represented by $\boldsymbo
 The force direction vector will also be taken form the application and will be represented by $F$.
 Also shown in \ref{var:Rotation Variables} is $\mathbf{P}$ and this represents the initial position, and $\mathbf{g}$ which is the centre of mass.
 Equations \ref{var:ftm} show three of the variables used $M$ beings the mass of the object, $f$ is the force applied to the object, and $t$ is the time since the initial force is applied. 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=\textwidth]{images/Screenshot2.PNG}
-	\caption{Screenshot of Cube at $t = 0.526 s$}
-	\label{fig:ScreenShotSingle}
-\end{figure}
 \begin{equation}\label{var:Rotation Variables}
 	\boldsymbol{\omega} = 
 	\begin{bmatrix}
