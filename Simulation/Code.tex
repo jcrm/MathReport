@@ -2,11 +2,11 @@
 In figure \ref*{sc:SourceCode} there is a snippet of the code used to create the application.
 The code shows the process described earlier in which the user presses the left mouse button to start the movement of the object.
 Parts of the code have been removed because it is not relevant to the motion of the object.
-These lines of code follow and comments which start with /* and ends with */. 
-
-\begin{figure}[H]
+These lines of code follow and comments which start with /* and ends with */.
+\begin{figure}[h]
 \centering
 \begin{lstlisting}
+//Check to see if the mouse has been clicked and it the first time.
 if (Input.GetMouseButton (0) && isPressed == false){
 	//Cast a Ray forwards and check to see if it hits the object.
 	Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
@@ -14,11 +14,13 @@ if (Input.GetMouseButton (0) && isPressed == false){
 	//If the ray hits and object initalise the variables.
 	if (Physics.Raycast (ray, out hit, distance)){
 		/*Start the timer and disable pressing the mouse button again.*/
-		//Calculate the force * direction of force.
+		//Calculate the force * direction of the force for the force vector.
 		Vector3 forceVector = (force* ray.direction);
-		//Add force to force at a particular location on object. Use Impulse so its an instantaneous force.
+		//Add force to object at a particular location on object. Use Impulse so its an instantaneous force.
 		rigidbody.AddForceAtPosition(forceVector, hit.point, ForceMode.Impulse);
 		/*Collect direction of force and the position the force hits.*/
+		//Calcualte the position of the corners of the cube in world co-ordinates.
+		calcCorners();
 		/*Output a screenshot.*/
 	}
 }

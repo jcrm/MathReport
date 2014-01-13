@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.16)  13 JAN 2014 11:22
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.16)  13 JAN 2014 11:54
 entering extended mode
 **Report.tex
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Report.tex"
@@ -699,7 +699,7 @@ Package pdftex.def Info: images/Simulation.PNG used on input line 13.
 [7 <C:/Users/Jake/Documents/UNI/4th Year/Maths/Report/images/Simulation.PNG>]))
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Review/Review.tex" [8]
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Review/Comparison.tex"
-<images/Screenshot2.PNG, id=235, 331.7193pt x 186.4566pt>
+<images/Screenshot2.PNG, id=238, 331.7193pt x 186.4566pt>
 File: images/Screenshot2.PNG Graphic file (type png)
 
 <use images/Screenshot2.PNG>
@@ -712,17 +712,17 @@ s been already used, duplicate ignored
 l.7 	\caption{Screenshot of Cube at $t = 0.526 s$}
                                                    [9 <C:/Users/Jake/Documents/
 UNI/4th Year/Maths/Report/images/Screenshot2.PNG>] [10] [11]
-<images/Screenshot1.PNG, id=273, 331.7193pt x 186.4566pt>
+<images/Screenshot1.PNG, id=275, 331.7193pt x 186.4566pt>
 File: images/Screenshot1.PNG Graphic file (type png)
 
 <use images/Screenshot1.PNG>
-Package pdftex.def Info: images/Screenshot1.PNG used on input line 230.
-(pdftex.def)             Requested size: 418.25552pt x 235.11864pt.
+Package pdftex.def Info: images/Screenshot1.PNG used on input line 234.
+(pdftex.def)             Requested size: 334.60568pt x 188.09491pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.231 ...= 0.296 s$, $t = 0.373 s$, $t = 0.498 s$}
+l.235 ...= 0.296 s$, $t = 0.373 s$, $t = 0.498 s$}
                                                    [12 <C:/Users/Jake/Documents
 /UNI/4th Year/Maths/Report/images/Screenshot1.PNG>])
 ("C:\Users\Jake\Documents\UNI\4th Year\Maths\Report\Review/Conclusion.tex"
@@ -746,13 +746,13 @@ Package rerunfilecheck Info: File `Report.brf' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 10.
  ) 
 Here is how much of TeX's memory you used:
- 9146 strings out of 493921
- 130116 string characters out of 3147284
- 254428 words of memory out of 3000000
+ 9149 strings out of 493921
+ 130167 string characters out of 3147284
+ 267428 words of memory out of 3000000
  12160 multiletter control sequences out of 15000+200000
  15549 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 34i,9n,40p,529b,1302s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,10n,40p,529b,1310s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
@@ -764,9 +764,9 @@ e1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on Report.pdf (17 pages, 2449746 bytes).
+Output written on Report.pdf (17 pages, 2451336 bytes).
 PDF statistics:
- 369 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
+ 373 PDF objects out of 1000 (max. 8388607)
+ 95 named destinations out of 1000 (max. 500000)
  125 words of extra memory for PDF output out of 10000 (max. 10000000)
 

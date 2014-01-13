@@ -1,20 +1,22 @@
 \subsection{Comparison:}\label{sc:Comp}
-To see how well the application is at simulating general motion of rigid bodies, this section will look to compare the position the application has after a moment of time has occurred to the position calculated by hand at the same moment.
-Figure \ref{fig:ScreenShotSingle} shows the cube after 0.526 seconds.
+To see how well the application is at simulating general motion of rigid bodies, this section will look to compare the position the application has calculated after a period of time to the position calculated by hand after the same amount of time.
+Figure \ref{fig:ScreenShotSingle} shows the cube after 0.526 seconds and all the relevant data needed to calculate the position by hand.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{images/Screenshot2.PNG}
 	\caption{Screenshot of Cube at $t = 0.526 s$}
 	\label{fig:ScreenShotSingle}
 \end{figure}
-This time will be used when calculating position by hand using Equation \ref{eq:PositionGM} because in this scenario force is available meaning the acceleration can be worked out using Newton's Second Law $F=MA$.
+
+The equation going to be used to calculate the position b hand is equation \ref{eq:PositionGM} because in this scenario force is available meaning the acceleration can be worked out using Newton's Second Law $F=MA$.
 \begin{equation}\label{eq:PositionGM}
 \mathbf{p}=\frac{1}{2}\mathbf{A}t^{2}+{R}\tilde{\mathbf{p}_{0}}+\mathbf{g}
 \end{equation}
+
 For the hand calculation the angular velocity will be represented by $\boldsymbol{\omega}$ and will be taken from the application.
 The force direction vector will also be taken form the application and will be represented by $F$.
 Also shown in \ref{var:Rotation Variables} is $\mathbf{P}$ and this represents the initial position, and $\mathbf{g}$ which is the centre of mass.
-Equations \ref{var:ftm} show three of the variables used $M$ beings the mass of the object, $f$ is the force applied to the object, and $t$ is the time since the initial force is applied. 
+Equations \ref{var:ftm} show three of the variables used $M$ being the mass of the object, $f$ is the force applied to the object, and $t$ is the time since the initial force has been applied. 
 \begin{equation}\label{var:Rotation Variables}
 	\boldsymbol{\omega} = 
 	\begin{bmatrix}
@@ -56,9 +58,9 @@ Equations \ref{var:ftm} show three of the variables used $M$ beings the mass of 
 	\qquad
 	\theta = \omega t = 2.144
 \end{equation}
-To start first acceleration will have to be calculated this will be represented by $\mathbf{A}$.
+To start acceleration will have to be calculated this will be represented in calculations by $\mathbf{A}$.
 It will be calculated as mentioned before using Newton’s Second Law $F=MA$.
-This means $\mathbf{A} = \mathbf{F}/M$ and results in Equation \ref{eq:Acceleration}.
+This means in terms of this problem $\mathbf{A} = \mathbf{F}/M$ and we values are substituted in results in equation \ref{eq:Acceleration}.
 \begin{equation}\label{eq:Acceleration}
 	\mathbf{A} = \frac{f}{M}
 	\begin{bmatrix}
@@ -77,7 +79,7 @@ This means $\mathbf{A} = \mathbf{F}/M$ and results in Equation \ref{eq:Accelerat
 		 3.95 
 	\end{bmatrix}
 \end{equation}
-Next needs to be calculated, this is done by calculating the position vector of the point relative to the centre of mass,  $\mathbf{g}$, this can be shown in Equation \ref{Eq:po}.
+Next $\tilde{\mathbf{p}_{0}}$ needs to be calculated, this is done by calculating the position vector of the point relative to the centre of mass,  $\mathbf{g}$, and can be shown in equation \ref{Eq:po}.
 \begin{equation}\label{Eq:po}
 	\tilde{\mathbf{p}_{0}} = \mathbf{P} - \mathbf{g} = 
 	\begin{bmatrix}
@@ -97,8 +99,8 @@ Next needs to be calculated, this is done by calculating the position vector of 
 	\end{bmatrix}
 \end{equation}
 The next step is to calculate the matrix $R$, which is a standard rotational matrix about any axis.
-Equation \ref{ma:GeneralRotation} is the initial matrix that will be used. $C$ is shorthand for $(1-\cos\theta)$.
-Below the rotational matrix are the values for $\alpha, \beta, \gamma$ in Equation \ref{var:alphabetagamma} and in Equation \ref{var:cs1-c} are the values of $\cos\theta, \sin\theta, (1-\cos\theta)$.
+Equation \ref{ma:GeneralRotation} is the initial matrix that will be used with $C$ being a shorthand for $(1-\cos\theta)$.
+Below the rotational matrix are the values for $\alpha, \beta, \gamma$ in equation \ref{var:alphabetagamma} and in equation \ref{var:cs1-c} are the values of $\cos\theta, \sin\theta, (1-\cos\theta)$.
 \begin{equation}\label{ma:GeneralRotation}
 	R = 
 	\begin{bmatrix}
@@ -129,7 +131,7 @@ Below the rotational matrix are the values for $\alpha, \beta, \gamma$ in Equati
 	\qquad
 	1-\cos\theta = 1.5421
 \end{equation}
-After substituting $\alpha, \beta, \gamma,\cos\theta, \sin\theta$, and $(1-\cos\theta)$ into the matrix the result can be seen in Matrix \ref{ma:Calculated Rotation}. Now multiply $R$ and $\tilde{\mathbf{p}_{0}}$ together to get Vector \ref{ma:CalculatedRPO}.
+After substituting $\alpha, \beta, \gamma,\cos\theta, \sin\theta$, and $(1-\cos\theta)$ into the matrix the result can be seen in Matrix \ref{ma:Calculated Rotation}. Now multiply $R$ and $\tilde{\mathbf{p}_{0}}$ together in \ref{ma:CalculatedRPO} to get the vector $	R\tilde{\mathbf{p}_{0}} = (-1.29, -3.39, -2.36)$.
 \begin{equation}\label{ma:Calculated Rotation}
 	R = 
 		\begin{bmatrix}
@@ -173,7 +175,7 @@ After substituting $\alpha, \beta, \gamma,\cos\theta, \sin\theta$, and $(1-\cos\
 		 -2.3596 
 	\end{bmatrix}
 \end{equation}
-$R\tilde{\mathbf{p}_{0}}$, $\mathbf{A}$, and $t^{2}$ can be substituted back into Equation \ref{eq:PositionGM} to find the final position of the chosen point.
+$R\tilde{\mathbf{p}_{0}}$, $\mathbf{A}$, and $t^{2}$ can now be substituted back into equation \ref{eq:PositionGM} to find the final position of the chosen point.
 \begin{equation}\label{eq:workout}
 	\mathbf{p}=\frac{1}{2}
 	\begin{bmatrix}
@@ -222,18 +224,20 @@ $R\tilde{\mathbf{p}_{0}}$, $\mathbf{A}$, and $t^{2}$ can be substituted back int
  		-1.8138 
 	\end{bmatrix}
 \end{equation}
-The final result for $\mathbf{p}$ is $(-0.88,-0.8,-1.81)$ when compared to the application vector of $(0.16,-0.76,-0.06)$ an error vector of $(1.04,0.04,1.75)$ can be calculated.
+
+The final result for $\mathbf{p}$ is $(-0.88,-0.8,-1.81)$ and when compared to the application's vector of $(0.16,-0.76,-0.06)$ an error vector of $(1.04,0.04,1.75)$ can be calculated.
 This vector is calculated by subtracting the calculated position vector from the applications position vector to show the difference between the two.
+
 Using screenshots taking during the application, which can be seen in figure \ref{fig:ScreenShotFour}, more calculations can be done using all the same variables except for the time variable to see if the application is constantly different from the calculated result.
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth]{images/Screenshot1.PNG}
+	\includegraphics[width=0.8\textwidth]{images/Screenshot1.PNG}
 	\caption{Screenshot of Cube at $t = 0.078 s$, $t = 0.296 s$, $t = 0.373 s$, $t = 0.498 s$}
 	\label{fig:ScreenShotFour}
 \end{figure}
+
 The Table \ref{table:ErrorTable} shows the results from performing the previous calculations on different time steps both by hand and by the application.
 Looking at the error vectors it can be seen that as the application continues the error between the application and the calculated results increase.
-
 \begin{table}[h]
 	\caption{Position Comparison}		% title of Table
 	\centering							% used for centering table
@@ -252,5 +256,6 @@ Looking at the error vectors it can be seen that as the application continues th
 	\end{tabular}
 	\label{table:ErrorTable}					% is used to refer this table in the text
 \end{table}
-There could be a number of different reasons which accumulated to give this error. For example it could be because of the way the physics engine in Unity3D handles rigid bodies but due to Unity3D being proprietary software it would be impossible to know exactly how the physics engine solves the problem or if any sacrifices where made to make performance fast and looking right compare to being actually physically realistic.
+
+There could be a number of different reasons which have accumulated to give this error. For example it could be because of the way the physics engine in Unity3D handles rigid bodies but due to Unity3D being proprietary software it would be impossible to know exactly how the physics engine solves the problem or if any sacrifices where made to make performance fast and looking right compare to being actually physically realistic.
 Also some of the errors could have come from rounding errors that follow through the equations, or from the possibility that the is timer not completely in sync with the physics engine in the application.
