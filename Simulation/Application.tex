@@ -1,16 +1,16 @@
 \subsection{Application:}\label{sc:App}
 As briefly described in the introduction this application was created to show what happens when a force is applied to a 3D Rigid Body.
 In the case of this application this body is a cube with a mass of 1 kg, sides of length 5, and a centre of mass at $(0,2.5,0)$.
-To do this the application was made using \citet{unity2013} Unity3D and it's built in physics engine.
+The force applied is 5N impulse force to any location the user chooses on the cube.
+To do this the application was made using \citet{unity2013} game engine Unity3D and the built in physics engine.
 
-The application allows the user to move around using the WASD keys and the mouse.
-Moving the mouse moves the direction of the ray coming from the camera hitting the box.
-This ray is the position the force will be applied to on the object.
-To apply the force the user clicks the left mouse button while the looking at the cube.
-
-\begin{figure}[h!]
+The application allows the user to move around the game world using the WASD keys and the mouse.
+Moving the mouse also moves the direction of the ray coming from the camera is facing.  
+The position at which the ray and cube collide is the location on the object where the force will be applied.
+To apply the force the user must click the left mouse button whilst looking at the cube.
+\begin{figure}[h!tb]
 	\centering
-	\includegraphics[width=\textwidth]{images/Simulation.PNG}
+	\includegraphics[width=0.75\textwidth]{images/Simulation.PNG}
 	\caption{Simulation Screenshots}
 	\label{fig:Simulation}
 \end{figure}

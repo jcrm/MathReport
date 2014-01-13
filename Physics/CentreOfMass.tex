@@ -1,12 +1,20 @@
 \subsection{Centre Of Mass:}\label{sc:COM}
+With any body the total mass is the sum of the particle mass that make up the body.
+Assuming that the body has a uniform density the total mass of the body can be calculated by multiplying the density of the body and the total volume \citep{bourg2013physics}.
+The above mentioned equation for calculating the total mass $M$ can be seen in equation \ref{eq:MassIntegral}, where $\rho$ is the density, which is integrated in the volume of the object.
+\begin{equation}\label{eq:MassIntegral}
+	M = \int \rho dV = \rho \int dV
+\end{equation}
 
 The centre of mass or the centre of gravity is the point in an object when cut in two will result in two objects with the same weight \citep{millington2007game}. 
-\citet{millington2007game} also describes how to calculate the centre of mass.
+\cite{bourg2013physics} describe the centre of mass in laymen's terms as the point in which mass is distributed evenly, and in terms of mechanics as the point in which forces don't cause rotation when being acted upon. 
+
+\citet{millington2007game} describes how to calculate the centre of mass.
 The object must be split into particles so that the average position can be calculated using equation \ref{Centre of Mass}. 
 \begin{equation}\label{Centre of Mass}
-   G=\frac{1}{M}\sum _{n}{p}_{i}{m}_{i} 
+   G=\frac{1}{M}\displaystyle\sum_{i}^{n}{p}_{i=1}{m}_{i} 
 \end{equation}
-Where $G$ is the position of the centre of mass, $M$ is the mass of the entire object, ${p}_{i}$ is the position of the particle and ${m}_{i}$ is the mass of each particle.
+Where $G$ is the position of the centre of mass, $M$ is the mass of the entire object, ${p}_{i}$ is the position of the particle, ${m}_{i}$ is the mass of each particle, $n$ is the number of particles, and $i$ is the counter for the number of particles.
 
 The centre of mass for any 3D object with uniform density can be found by performing a triple integral on the each separate coordinate component and then dividing by the mass of the entire object.
 The triple integrals for the $xyz$ components can be seen in equations \ref{eq:Centre of Mass x-Component} - \ref{eq:Centre of Mass z-Component}.
@@ -28,7 +36,6 @@ Equation \ref{eq:Centre of Mass Equation} shows the position vector of the centr
    \mathbf{G}=(G_{x},G_{y},G_{z})
 \end{equation}
 For certain shapes such as cuboids and spheres with uniform density the centre of mass is the centre of the shape \citep{millington2007game}.
-\citet{millington2007game} describes the reason why the centre of mass is so important to rigid body physics is because “By selecting the center of mass as our origin position we can completely separate the calculations for the linear motion of the object (which is the same as for particles) and its angular motion.” 
-In the application there is only one object and because it is a cube the centre of mass is always going to the geometric centre of the object.
-This means the previous calculation for working out the centre of mass is won't be needed.
-However if other objects were added the centre of mass may need to be calculated.  
+In the application there is only one object a cube, if there were to be more objects added then the previous equations for working out the centre of mass would be needed.
+
+\citet{millington2007game} describes the reason why the centre of mass is so important to rigid body physics is because “By selecting the centre of mass as our origin position we can completely separate the calculations for the linear motion of the object (which is the same as for particles) and its angular motion.” 

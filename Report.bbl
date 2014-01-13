@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{6}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{Available from: }
@@ -13,9 +13,19 @@ Bourg, D.~M. \harvardand{} Bywalec, B. 2013.
   Realistic Effects}.
 \newblock O'Reilly Media, Inc.
 
-\bibitem[{MacTaggart(2013)}]{mactaggart2013l5}
-MacTaggart, D. 2013.
+\bibitem[{MacTaggart(2013{\natexlab{a}})}]{mactaggart2013l5}
+MacTaggart, D. 2013{\natexlab{a}}.
 \newblock \emph{Applications of Integration \& Basic 3D Motion}.
+\newblock UAD - CE11051A.
+
+\bibitem[{MacTaggart(2013{\natexlab{b}})}]{mactaggart2013l8}
+MacTaggart, D. 2013{\natexlab{b}}.
+\newblock \emph{Euler Equations}.
+\newblock UAD - CE11051A.
+
+\bibitem[{MacTaggart(2013{\natexlab{c}})}]{mactaggart2013l9}
+MacTaggart, D. 2013{\natexlab{c}}.
+\newblock \emph{General Motion of a Rigid Body}.
 \newblock UAD - CE11051A.
 
 \bibitem[{Millington(2007)}]{millington2007game}
